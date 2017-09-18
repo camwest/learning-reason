@@ -7,11 +7,14 @@
     "webpack": "webpack",
     "start": "webpack-dev-server --open",
     "clean": "bsb -clean-world",
-    "watch:bsb": "bsb -make-world -w"
+    "watch:bsb": "bsb -make-world -w",
+    "watch:jest": "jest --watchAll",
+    "test": "npm run build && jest"
   },
   "keywords": ["BuckleScript"],
   "license": "MIT",
   "devDependencies": {
+    "bs-jest": "^0.1.0",
     "bs-loader": "^1.7.1",
     "bs-platform": "1.9.2",
     "clean-webpack-plugin": "^0.1.16",

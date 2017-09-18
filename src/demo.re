@@ -1,7 +1,8 @@
-Js.log "this is reason";
+let calculate2 numbers scaleFactor =>
+  List.fold_left (fun acc x => acc + x) 0 numbers * scaleFactor;
 
-Js.log "this is reason";
+Js.log (calculate2 [1, 2, 3] 10); /* -> 60 */
 
-let x = [%bs.raw {| 'here is a string from javascript' |}];
+let command = Commands.toggleLayerVisibility name::"Other" visible::true;
 
-Js.log (x ^ " back in reason land"); /* ^ is the operator for string concat */
+Js.log (Serializer.buildCommand command);

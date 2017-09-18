@@ -2,9 +2,12 @@
   "name": "my-first-app",
   "version": "0.1.0",
   "scripts": {
-    "build": "webpack",
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w",
+    "webpack": "webpack",
     "start": "webpack-dev-server --open",
-    "clean": "bsb -clean-world"
+    "clean": "bsb -clean-world",
+    "watch:bsb": "bsb -make-world -w"
   },
   "keywords": ["BuckleScript"],
   "license": "MIT",

@@ -1,5 +1,7 @@
 {
   "files.associations": {
     "*.js": "javascript"
-  }
+  },
+
+  "editor.formatOnSave": true
 }
